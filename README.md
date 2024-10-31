@@ -24,9 +24,7 @@ L'unico requisito è un account Google per poter accedere a  <a href="https://dr
 1) Scaricare i file da GitHub e caricarli su Google Drive nella **<u>stessa cartella</u>**;     
  **NOTA:** _È fortemente consigliato di creare la cartella del progetto nella propria home su Google Drive. Qualora si voglia comunque utilizzare una cartella differente sarà necessario aggiornare il percorso della cartella su ogni notebook._
 
-2) Aprire il file `settings.json` e inserire i Google Drive ID per il file zip contenente il dataset.<br>
-
-3) In qualsiasi notebook verrà chiesto di inserire il percorso della cartella Google Drive dove sono contenuti i vari file. Una volta impostata sarà possibile eseguire i notebooks;<br>
+2) In qualsiasi notebook verrà chiesto di inserire il percorso della cartella Google Drive dove sono contenuti i vari file. Una volta impostata sarà possibile eseguire i notebooks;<br>
  **NOTA:** _Il percorso va impostato manualmente in qualsiasi notebook al momento del suo primo utilizzo, poi rimarrà salvato e non ci sarà bisogno di inserirlo nuovamente._
 
 # Struttura del progetto
