@@ -9,12 +9,13 @@
 
 # EEG Recognition
 <p align="justify">
-Il nulla
-</p>
+In questa repository viene in primo luogo sviluppato un sistema di riconoscimento personale basato sull'analisi dei segnali EEG 
+con conseguente valutazione delle prestazioni al variare dei filtri applicati alla banda del segnale.
+Viene successivamente presentata anche una analisi approfondita riguardo l'applicazione di tecniche di deep learning avanzate al fine di migliorare l'analisi dei segnali EEG per il riconoscimento personale in termini di accuratezza e velocità di elaborazione.</p>
 
  
 # Dataset utilizzato
-<p align="justify">Per il progetto è stato utilizzato il dataset <i>"EEG Motor Movement/Imagery"</i>, scaricabile da <a href="https://drive.usercontent.google.com/download?id=1WwuAh25Jfx-I8rY3vFGyXiI79YfLYUpH&authuser=0">questo link</a>. Il repository contiene i notebooks e i file necessari per scaricare il dataset e sfruttarlo per addestrare ed eseguire i modelli.</p>
+<p align="justify">Per il progetto è stata utilizzata una sottoporzione del dataset <i>"EEG Motor Movement/Imagery"</i>, scaricabile da <a href="https://drive.usercontent.google.com/download?id=1WwuAh25Jfx-I8rY3vFGyXiI79YfLYUpH&authuser=0">questo link</a>. Il dataset orginale è composto da 14 diverse esecuzioni sperimentali ottenute da 109 volontari; nel nostro caso verrà utilizzata soltanto la parte inerente la "run 01", ossia l'esecuzione sperimentale "Basale, occhi aperti". Il nostro set di dati sarà pertanto composto da 109 EEG composti da 64 canali registrati utiizzando il sistema BCI2000. Il repository contiene i notebooks e i file necessari per scaricare il sub-dataset e sfruttarlo per addestrare ed eseguire i modelli.Ulteriori informazioni riguardo il dataset originale si possono reperire al seguente <a href="https://physionet.org/content/eegmmidb/1.0.0/"> link</a></p>
 
 # Installazione
 ## **Requisiti:**   
