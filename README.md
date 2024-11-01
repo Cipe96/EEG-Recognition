@@ -6,6 +6,9 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![MNE](https://img.shields.io/badge/MNE-blue?style=for-the-badge&logoColor=orange&labelColor=blue&color=blue)
+
+
 
 # EEG Recognition
 <p align="justify">
