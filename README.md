@@ -12,13 +12,12 @@
 
 # EEG Recognition
 <p align="justify">
-In questa repository viene in primo luogo sviluppato un sistema di riconoscimento personale basato sull'analisi dei segnali EEG 
-con conseguente valutazione delle prestazioni al variare dei filtri applicati alla banda del segnale.
-Viene successivamente presentata anche una analisi approfondita riguardo l'applicazione di tecniche di deep learning avanzate al fine di migliorare l'analisi dei segnali EEG per il riconoscimento personale in termini di accuratezza e velocità di elaborazione.</p>
+L'obiettivo principale di questa repository è di sviluppare un sistema di riconoscimento personale basato su segnali EEG, analizzando l’impatto delle diverse bande di frequenza e sperimentando con differenti combinazioni di preprocessing al fine di valutare le prestazioni del nostro classificatore convolutivo.
+Successivamente, basandoci sui risultati ottenuti, per rispondere sfide chiave in questo campo (l’importanza della robustezza e della generalizzazione nel riconoscimento EEG al variare degli stati mentali) è stata svolta una ricerca approfondita riguardo la capacità di generalizzazione di un classificatore Ensamble su dati simili e non identici a quelli utilizzati in fase di addestramento.</p>
 
  
 # Dataset utilizzato
-<p align="justify">Per il progetto è stata utilizzata una sottoporzione del dataset <i>"EEG Motor Movement/Imagery"</i>, scaricabile da <a href="https://drive.usercontent.google.com/download?id=1WwuAh25Jfx-I8rY3vFGyXiI79YfLYUpH&authuser=0">questo link</a>. Il dataset orginale è composto da 14 diverse esecuzioni sperimentali ottenute da 109 volontari; nel nostro caso verrà utilizzata soltanto la parte inerente la "run 01", ossia l'esecuzione sperimentale "Basale, occhi aperti". Il nostro set di dati sarà pertanto composto da 109 EEG composti da 64 canali registrati utiizzando il sistema BCI2000. Il repository contiene i notebooks e i file necessari per scaricare il sub-dataset e sfruttarlo per addestrare ed eseguire i modelli.Ulteriori informazioni riguardo il dataset originale si possono reperire al seguente <a href="https://physionet.org/content/eegmmidb/1.0.0/"> link</a></p>
+<p align="justify">Per il progetto è stata utilizzata una sottoporzione del dataset <i>"EEG Motor Movement/Imagery"</i>, scaricabile da <a href="https://drive.usercontent.google.com/download?id=1WwuAh25Jfx-I8rY3vFGyXiI79YfLYUpH&authuser=0">questo link</a>. Il dataset orginale è composto da 14 diverse esecuzioni sperimentali ottenute da 109 volontari; nel nostro caso è stata utilizzata soltanto la run 01 per raggiungere l'obiettivo principale. Successivamente son state utilizzate la run 02 e la run 06 per addestrare separatamente altri due classificatori convolutivi, utilizzati assieme al precedentemente costruito per formare un Ensamble testato sulle run 03, 04 e 05. Ogni subset utilizzato è pertanto formato da 109 EEG composti da 64 canali registrati utiizzando il sistema BCI2000. Il repository contiene i notebooks e i file necessari per scaricare i vari subset. Ulteriori informazioni riguardo il dataset originale si possono reperire al seguente <a href="https://physionet.org/content/eegmmidb/1.0.0/"> link</a></p>
 
 # Installazione
 ## **Requisiti:**   
@@ -38,9 +37,13 @@ Il progetto è stato organizzato in più notebooks/files in base ai modelli e al
 
 | Nome File | Descrizione |
 | :---: | :---: |
-| `Analisi Dataset.ipynb` | Notebook per l'analisi del dataset |
-| `EEG_Motor_Movement-Imagery_ID.json`| File di configurazione per download del dataset |
-| `shared_utilities.py`| File python contenente le funzioni condivise |
+| `Analisi Dataset_e_Preprocessing.ipynb` | Notebook per l'analisi del dataset, svolgimento di vari tipi di preprocessing e download dei file .npy pronti per il Convolutivo |
+| `Classificatore_Convolutivo.ipynb`| Notebook per l'addestramento del modello convolutivo. Permette anche di salvare e caricare configurazioni già pronte |
+| `Download_Subset_e_Preprocessing.ipynb`| Permette di prelevare altre run del dataset originale, eseguire il preprocessing definitivo e salvare tutto in file .npy.  |
+| `Classificatore_Ensamble.ipynb`| Permette di caricare i modelli pre-addestrati su run 01, 02 e 06 e di combinare le predizioni da testare su un'altra specifica run.  |
+| `Risultati.ipynb`| Notebook dove vengono esposti brevemente i risultati riepilogativi del progetto.  |
+| `shared_utilities.py`| File python contenente le funzioni condivise fra i vari notebooks |
+| `EEG_Motor_Movement-Imagery_ID.json`| File di configurazione per download del subaset iniziale inerente la run 01 (zippato e più veloce rispetto agli altri) |
 
 </div>
 
