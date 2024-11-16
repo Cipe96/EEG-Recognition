@@ -48,6 +48,6 @@ Il progetto è stato organizzato in più notebooks/files in base ai modelli e al
 </div>
 
 # Autori
-<a href="https://github.com/Cipe96/EEG-Recognition/graphs/contributors">
+<a href="https://github.com/cipe96/EEG-Recognition/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=cipe96/EEG-Recognition"/>
 </a>  
