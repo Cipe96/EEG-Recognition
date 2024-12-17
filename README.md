@@ -12,8 +12,8 @@
 
 # EEG Recognition
 <p align="justify">
-L'obiettivo principale di questa repository è di sviluppare un sistema di riconoscimento personale basato su segnali EEG, analizzando l’impatto delle diverse bande di frequenza e sperimentando con differenti combinazioni di preprocessing al fine di valutare le prestazioni del nostro classificatore convolutivo.
-Successivamente, basandoci sui risultati ottenuti, per rispondere sfide chiave in questo campo (l’importanza della robustezza e della generalizzazione nel riconoscimento EEG al variare degli stati mentali) è stata svolta una ricerca approfondita riguardo la capacità di generalizzazione di un classificatore Ensamble su dati simili e non identici a quelli utilizzati in fase di addestramento.</p>
+L'obiettivo principale di questa repository è di sviluppare un sistema di riconoscimento personale basato su segnali EEG, analizzando l’impatto delle diverse bande di frequenza nelle prestazioni del classificatore convolutivo proposto.
+Successivamente, basandoci sui risultati ottenuti, per rispondere sfide chiave in questo campo (l’importanza della robustezza e della generalizzazione nel riconoscimento EEG al variare degli stati mentali) è stata svolta una ricerca approfondita riguardo la capacità di generalizzazione di un classificatore Ensamble su dati simili e non identici a quelli utilizzati in fase di addestramento. Infine grazie all'utilizzo della Grad-Cam si è evidenziato come i pattern spaziali e temporali cambino da volontario a volontario.</p>
 
  
 # Dataset utilizzato
