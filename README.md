@@ -27,7 +27,7 @@ L'unico requisito è un account Google per poter accedere a  <a href="https://dr
 1) Scaricare i file da GitHub e caricarli su Google Drive nella **<u>stessa cartella</u>**;     
  **NOTA:** _È fortemente consigliato di creare la cartella del progetto nella propria home su Google Drive. Qualora si voglia comunque utilizzare una cartella differente sarà necessario aggiornare il percorso della cartella su ogni notebook._
 
-2) In qualsiasi notebook verrà chiesto di inserire il percorso della cartella Google Drive dove sono contenuti i vari file. Una volta impostata sarà possibile eseguire i notebooks;<br>
+2) In quasi tutti i notebooks verrà chiesto di inserire il percorso della cartella Google Drive dove sono contenuti i vari file. Una volta impostata sarà possibile eseguire i notebooks;<br>
  **NOTA:** _Il percorso va impostato manualmente in qualsiasi notebook al momento del suo primo utilizzo, poi rimarrà salvato e non ci sarà bisogno di inserirlo nuovamente._
 
 # Struttura del progetto
@@ -37,15 +37,30 @@ Il progetto è stato organizzato in più notebooks/files in base ai modelli e al
 
 | Nome File | Descrizione |
 | :---: | :---: |
-| `Analisi Dataset_e_Preprocessing.ipynb` | Notebook per l'analisi del dataset, svolgimento di vari tipi di preprocessing e download dei file .npy pronti per il Convolutivo |
-| `Classificatore_Convolutivo.ipynb`| Notebook per l'addestramento del modello convolutivo. Permette anche di salvare e caricare configurazioni già pronte |
-| `Download_Subset_e_Preprocessing.ipynb`| Permette di prelevare altre run del dataset originale, eseguire il preprocessing definitivo e salvare tutto in file .npy.  |
+| `Analisi Dataset_e_Preprocessing.ipynb` | Notebook per l'analisi del dataset, svolgimento di vari tipi di preprocessing e download dei file .npy pronti per l'addestramento dei modelli proposti |
+| `Classificatore_Convolutivo.ipynb`| Notebook per l'addestramento del modello convolutivo (con Conv1D o SeparableConv1D). Permette anche di salvare e caricare configurazioni già pronte |
+| `Classificatore_EEGNet.ipynb`| Notebook per l'addestramento del modello EEGNet. Permette anche di salvare e caricare configurazioni già pronte |
+| `Download_Subset_e_Preprocessing.ipynb`| Permette di prelevare altre run del dataset originale, eseguire il preprocessing preimpostato e salvare tutto in file .npy.  |
 | `Classificatore_Ensamble.ipynb`| Permette di caricare i modelli pre-addestrati su run 01, 02 e 06 e di combinare le predizioni da testare su un'altra specifica run.  |
-| `Risultati.ipynb`| Notebook dove vengono esposti brevemente i risultati riepilogativi del progetto.  |
+| `Analisi_dei_risultati.ipynb`| Notebook dove vengono esposti brevemente i risultati riepilogativi e le conclusioni del progetto.  |
 | `shared_utilities.py`| File python contenente le funzioni condivise fra i vari notebooks |
 | `EEG_Motor_Movement-Imagery_ID.json`| File di configurazione per download del subaset iniziale inerente la run 01 (zippato e più veloce rispetto agli altri) |
 
 </div>
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0**.  
+You can find the full text of the license in the [LICENSE](LICENSE) file.
+
+## Credits
+
+This project uses the **ARL EEGModels** architecture provided by the U.S. Army Research Laboratory.  
+- Source: [ARL EEGModels GitHub Repository](https://github.com/USArmyResearchLab/ARL-EEGModels)  
+- License: [CC0 1.0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+
+The inclusion of this component complies with the terms of the GNU GPL v3.
+
 
 # Autori
 <a href="https://github.com/cipe96/EEG-Recognition/graphs/contributors">
