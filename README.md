@@ -39,24 +39,26 @@ Il progetto è stato organizzato in più notebooks/files in base ai modelli e al
 | :---: | :---: |
 | `Analisi Dataset_e_Preprocessing.ipynb` | Notebook per l'analisi del dataset, svolgimento di vari tipi di preprocessing e download dei file .npy pronti per l'addestramento dei modelli proposti |
 | `Classificatore_Convolutivo.ipynb`| Notebook per l'addestramento del modello convolutivo (con Conv1D o SeparableConv1D). Permette anche di salvare e caricare configurazioni già pronte |
+| `EEGModels.py`| File originale con dentro l'implementazione del modello EEGNet utilizzato per un confronto prestazionale |
 | `Classificatore_EEGNet.ipynb`| Notebook per l'addestramento del modello EEGNet. Permette anche di salvare e caricare configurazioni già pronte |
 | `Download_Subset_e_Preprocessing.ipynb`| Permette di prelevare altre run del dataset originale, eseguire il preprocessing preimpostato e salvare tutto in file .npy.  |
 | `Classificatore_Ensamble.ipynb`| Permette di caricare i modelli pre-addestrati su run 01, 02 e 06 e di combinare le predizioni da testare su un'altra specifica run.  |
+| `Analisi_XAI.ipynb`| Notebook dove viene utilizzata la Grad-Cam per interpretare i canali coinvolti nella classificazione.  |
 | `Analisi_dei_risultati.ipynb`| Notebook dove vengono esposti brevemente i risultati riepilogativi e le conclusioni del progetto.  |
 | `shared_utilities.py`| File python contenente le funzioni condivise fra i vari notebooks |
 | `EEG_Motor_Movement-Imagery_ID.json`| File di configurazione per download del subaset iniziale inerente la run 01 (zippato e più veloce rispetto agli altri) |
 
 </div>
 
-## License
+## Licenza
 
 This project is licensed under the **GNU General Public License v3.0**.  
 You can find the full text of the license in the [LICENSE](LICENSE) file.
 
-## Credits
+## Crediti
 
 This project uses the **ARL EEGModels** architecture provided by the U.S. Army Research Laboratory.  
-- Source: [ARL EEGModels GitHub Repository](https://github.com/USArmyResearchLab/ARL-EEGModels)  
+- Source: [ARL EEGModels GitHub Repository](https://github.com/vlawhern/arl-eegmodels)
 - License: [CC0 1.0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 
 The inclusion of this component complies with the terms of the GNU GPL v3.
