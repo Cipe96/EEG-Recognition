@@ -1,6 +1,6 @@
-<EEG_Recognition> - <EEG-based person identification on EEG Motor Movement/Imagery>
+<EEG-Recognition> - <EEG-based person identification on EEG Motor Movement/Imagery>
 
-Copyright (C) 2024 <Il tuo nome o il nome del team/progetto>
+Copyright (C) 2024 <M. Cipollina, R. Era>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,7 +14,7 @@ GNU General Public License for more details.
 
 Attribution:  
 This project includes the **ARL EEGModels** architecture provided by the U.S. Army Research Laboratory.  
-- Source: [ARL EEGModels GitHub Repository](https://github.com/USArmyResearchLab/ARL-EEGModels)  
+- Source: [ARL EEGModels GitHub Repository](https://github.com/vlawhern/arl-eegmodels)  
 - License: [CC0 1.0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 
 
